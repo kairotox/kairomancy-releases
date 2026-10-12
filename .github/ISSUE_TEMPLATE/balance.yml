@@ -1,0 +1,22 @@
+name: Balance
+description: A card, Artifact gem or strategy feels too strong or too weak
+labels: ["balance"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Game version
+      placeholder: "0.1.0"
+  - type: input
+    id: cards
+    attributes:
+      label: Which cards or strategy?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it feel off?
+      description: What happens in your games? What would you change?
+    validations:
+      required: true

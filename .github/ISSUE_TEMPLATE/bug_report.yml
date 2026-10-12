@@ -1,0 +1,29 @@
+name: Bug report
+description: Something broke or behaved wrong
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Game version
+      description: Shown at the bottom of the main menu (the in-game Report a bug button fills it in).
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: And what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen again
+      description: Steps, the cards involved, vs AI or online.
+      placeholder: "1. ...\n2. ...\n3. ..."
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else
